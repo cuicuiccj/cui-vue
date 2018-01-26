@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.10.1.js" ></script>
+	</head>
+	<body>
+		<from>
+			<h4>sessionStorage案例欣赏</h4>
+			<input type="text" placeholder="请输入您需要保存的内容" class="ipt"/>
+			<button class="btn1">保存数据</button>
+			<button class="btn2">读取数据</button>
+		</from>
+		<from>
+			<h4>localStorage案例欣赏</h4>
+			<input type="text" placeholder="请输入您需要保存的内容" />
+			<button class="btn1">保存数据</button>
+			<button class="btn2">读取数据</button>
+		</from>
+		<script type="text/javascript">
+			$('.btn1').click(function(){
+				localStorage.setItem('.ipt',$('.ipt').val())
+			})
+			
+			$('.btn2').click(function(){
+				localStorage.getItem('.ipt')
+			})
+			
+		</script>
+	</body>
+</html>

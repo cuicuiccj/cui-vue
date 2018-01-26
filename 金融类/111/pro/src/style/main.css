@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#main{
+	height: 100vh;
+	display: flex;
+	flex-direction:column;
+	font-family: "宋体";
+}
+
+#main header,footer{
+	height: 45px;
+	background: orange;
+	text-align: center;
+	line-height: 45px;
+	font-size: 20px;
+	color: white;
+}
+#main section{
+	flex: 1;
+}
+#main footer{
+	overflow: hidden;
+}
+#main footer a{
+	display: block;
+	text-decoration: none;
+	float: left;
+	width: 33%;
+	color: red;
+}
